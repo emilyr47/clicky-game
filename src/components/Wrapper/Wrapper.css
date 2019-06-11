@@ -1,0 +1,8 @@
+.wrapper {
+  background: rgb(175, 175, 175);
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLPs6sz_pbI8wlgMATr5_SACjTu8XCNyCrd14mc61eZoLzS9MC");
+  height: 100%;
+  flex-flow: row wrap;
+  overflow: auto;
+  padding-bottom: 50px;
+}

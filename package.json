@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "https://emilyr47.github.io/clicky-game",
   "dependencies": {
-    "gh-pages": "^1.1.0",
+    "gh-pages": "^2.0.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-scripts": "1.0.17"

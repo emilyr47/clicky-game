@@ -4,10 +4,10 @@ This app is a game built using React.js.  In this game, the goal is to repeatedl
 
 Technologies:
 
-React.js
-JavaScript
-CSS
-HTML
+React.js,
+JavaScript,
+CSS,
+HTML, &
 Bootstrap
 
 View the demo app at: https://emilyr47.github.io/clicky-game/

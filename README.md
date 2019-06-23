@@ -11,3 +11,10 @@ HTML, &
 Bootstrap
 
 View the demo app at: https://emilyr47.github.io/clicky-game/
+
+Setup Instructions:
+
+1. Ensure you have Node.js or Yarn installed on your local machine
+2. Install all dependencies by entering npm i or yarn install from the terminal while in the root folder
+3. Then, run either npm start or yarn start to open the app in your browser.
+

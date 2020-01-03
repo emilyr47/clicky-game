@@ -9,6 +9,7 @@ import Column from "./Column";
 import friends from "./friends.json";
 import "./App.css";
 
+
 function shuffleFriends(array) {
   for (let i = array.length - 1; i > 0; i--) {
     let j = Math.floor(Math.random() * (i + 1));
@@ -41,11 +42,8 @@ class App extends Component {
       currentScore: newScore,
       rightWrong: ""
     });
-    if (newScore >= this.state.topScore) {
-      this.setState({ topScore: newScore });
-    }
-    else if (newScore === 12) {
-      this.setState({ rightWrong: "You Won!" });
+  if (newScore === 12) {
+      this.setState({ rightWrong: "You Won the Game!  Click on any Friends character to restart the game." });
     }
     this.handleShuffle();
   };
@@ -54,7 +52,7 @@ class App extends Component {
     this.setState({
       currentScore: 0,
       topScore: this.state.topScore,
-      rightWrong: "You Lost",
+      rightWrong: "You Lost, better luck next time.  Click on any Friend's character to restart the game.",
       clicked: []
     });
     this.handleShuffle();
@@ -68,12 +66,14 @@ class App extends Component {
   render() {
     return (
       <Wrapper>
+        <div id="opacity">
         <Nav
           title="Friends Clicky Game"
           score={this.state.currentScore}
           topScore={this.state.topScore}
           rightWrong={this.state.rightWrong}
         />
+        
 
         <Container>
           <Row>
@@ -92,6 +92,7 @@ class App extends Component {
             ))}
           </Row>
         </Container>
+        </div>
       </Wrapper>
     );
   }

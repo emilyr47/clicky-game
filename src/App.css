@@ -4,3 +4,18 @@
   margin-bottom: 50px;
   color: white;
 }
+
+#rw {
+  color: red;
+  font-size: 30px;
+  font-style: bold;
+  animation: blinker 1s linear infinite;
+    
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+
+}
